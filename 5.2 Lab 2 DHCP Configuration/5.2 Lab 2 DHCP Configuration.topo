@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="A8656CF0-C7DE-4454-B4C8-AEA8A6E8D037" name="R3" poe="0" model="Router" settings="" system_mac="54-89-98-27-0D-A9" com_port="2002" bootmode="0" cx="409.000000" cy="317.000000" edit_left="436" edit_top="371">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="8179BA35-E41D-4a28-9F3A-A4C64F068F6C" name="R2" poe="0" model="Router" settings="" system_mac="54-89-98-CB-16-3B" com_port="2001" bootmode="0" cx="275.000000" cy="96.000000" edit_left="302" edit_top="150">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="FF2E7C7E-65F7-4109-84C3-14549C68AF32" name="R1" poe="0" model="Router" settings="" system_mac="54-89-98-43-08-DC" com_port="2000" bootmode="0" cx="108.000000" cy="317.000000" edit_left="135" edit_top="371">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="FF2E7C7E-65F7-4109-84C3-14549C68AF32" destDeviceID="8179BA35-E41D-4a28-9F3A-A4C64F068F6C">
+            <interfacePair lineName="Copper" srcIndex="5" srcBoundRectIsMoved="1" srcBoundRect_X="161.034805" srcBoundRect_Y="309.546753" srcOffset_X="-52.000000" srcOffset_Y="-14.000000" tarIndex="5" tarBoundRectIsMoved="1" tarBoundRect_X="275.965179" tarBoundRect_Y="157.453247" tarOffset_X="-53.000000" tarOffset_Y="-8.000000" />
+        </line>
+        <line srcDeviceID="8179BA35-E41D-4a28-9F3A-A4C64F068F6C" destDeviceID="A8656CF0-C7DE-4454-B4C8-AEA8A6E8D037">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="324.389618" srcBoundRect_Y="159.926178" srcOffset_X="4.000000" srcOffset_Y="-11.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="413.610382" tarBoundRect_Y="307.073822" tarOffset_X="5.000000" tarOffset_Y="-13.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="75" top="394" right="162" bottom="411" content="DHCP client" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="420" top="385" right="507" bottom="402" content="DHCP client" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="255" top="70" right="342" bottom="87" content="DHCP server" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="113" top="137" right="208" bottom="154" content="10.0.12.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="395" top="134" right="490" bottom="151" content="10.0.23.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="245" top="120" right="264" bottom="137" content=".2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="336" top="117" right="355" bottom="134" content=".2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="102" top="159" right="212" bottom="176" content="interface pool" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="404" top="160" right="491" bottom="177" content="global pool" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
